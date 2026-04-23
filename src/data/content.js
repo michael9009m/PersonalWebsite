@@ -15,7 +15,7 @@ export const data = {
       location: "San Jose, CA",
       dates: "05/2024 – 09/2024",
       bullets: [
-        "Collaborated with a mentor engineer to build and iterate on a proof-of-concept internal workflow tool that integrated with backend REST services to surface network telemetry insights for operations teams.",
+        "Built and iterated on a proof-of-concept internal workflow tool that integrated with backend REST services to surface network telemetry insights for operations teams.",
         "Documented research findings, API behaviors, and implementation decisions in shared team wikis, and presented progress to senior engineers during sprint reviews.",
         "Designed and implemented optimization to the data retrieval layer, reducing response time on dashboard queries.",
       ],
@@ -55,7 +55,7 @@ export const data = {
 
   projects: [
     {
-      name: "Serverless Stock Data Pipeline",
+      name: "AWS Serverless Stock Data Pipeline",
       tech: ["Python", "AWS Lambda", "Terraform", "EventBridge", "S3"],
       description: "Architected an event-driven serverless pipeline tracking daily top-moving stocks across a 6-ticker watchlist using modular Terraform IaC, displayed on a public color-coded S3 static website.",
       bullets: [
@@ -68,10 +68,32 @@ export const data = {
     {
       name: "Smart Foods AI Nutritionist",
       tech: ["Python", "PostgreSQL", "OpenAI API", "FastAPI"],
-      description: "Led backend development for an AI-powered nutrition application that shipped a production MVP to 22 testers processing 200+ meal logs at ~2s average response times.",
+      description: "Team lead for Senior Capstone Project managing backend development for an AI-powered nutrition application that shipped a production MVP to 22 testers processing 200+ meal logs at ~2s average response times.",
       bullets: [
         "Integrated OpenAI API with structured prompt engineering and JSON schema validation to power AI-driven nutritional analysis.",
         "Led backend development for meal logging, authentication, and PostgreSQL data persistence.",
+      ],
+      live: null,
+      github: "https://github.com/michael9009m",
+    },
+    {
+      name: "Prometheus – Personal AI Fitness Trainer",
+      tech: ["Python", "OpenAI API", "FastAPI", "PostgreSQL"],
+      description: "Led a team as part of junior capstone to build a personalized AI fitness trainer powered by the OpenAI API, generating custom workout plans and tracking user progress over time.",
+      bullets: [
+        "Integrated OpenAI API with structured prompt engineering to generate personalized workout and recovery plans based on user goals, fitness level, and history.",
+        "Led team coordination, sprint planning, and end-to-end delivery from scoping through deployment.",
+      ],
+      live: null,
+      github: "https://github.com/michael9009m",
+    },
+    {
+      name: "Machine Learning Credit Card Fraud Detection",
+      tech: ["Python", "Scikit-learn", "Pandas", "Machine Learning"],
+      description: "Built a fraud detection ML pipeline on 284,807 transactions achieving 99% fraud precision, 81% recall, and an F1 score of 0.91.",
+      bullets: [
+        "Applied SMOTE oversampling, threshold tuning, and stratified k-fold cross-validation to address severe class imbalance without data leakage.",
+        "Achieved 99% fraud precision and 81% recall through systematic model evaluation and feature engineering.",
       ],
       live: null,
       github: "https://github.com/michael9009m",

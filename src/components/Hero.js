@@ -16,6 +16,28 @@ export default function Hero() {
     }
   }, [index, fullText]);
 
+  const buttonStyle = {
+    padding: '0.75rem 2rem',
+    border: '1px solid var(--accent)',
+    color: 'var(--accent)',
+    fontFamily: 'DM Mono, monospace',
+    fontSize: '0.8rem',
+    letterSpacing: '0.1em',
+    textDecoration: 'none',
+    transition: 'all 0.2s ease',
+    background: 'transparent',
+  };
+
+  const handleEnter = (e) => {
+    e.target.style.background = 'var(--accent)';
+    e.target.style.color = 'var(--bg)';
+  };
+
+  const handleLeave = (e) => {
+    e.target.style.background = 'transparent';
+    e.target.style.color = 'var(--accent)';
+  };
+
   return (
     <section style={{
       minHeight: '100vh', display: 'flex', alignItems: 'center',
@@ -40,23 +62,17 @@ export default function Hero() {
           {data.about}
         </p>
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-          <a href={data.github} target="_blank" rel="noreferrer" style={{
-            padding: '0.75rem 2rem', border: '1px solid var(--accent)', color: 'var(--accent)',
-            fontFamily: 'DM Mono, monospace', fontSize: '0.8rem', letterSpacing: '0.1em',
-            textDecoration: 'none', transition: 'all 0.2s ease',
-          }}
-            onMouseEnter={e => { e.target.style.background = 'var(--accent)'; e.target.style.color = 'var(--bg)'; }}
-            onMouseLeave={e => { e.target.style.background = 'transparent'; e.target.style.color = 'var(--accent)'; }}
+          <a href={data.github} target="_blank" rel="noreferrer"
+            style={buttonStyle}
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
           >
             GitHub
           </a>
-          <a href={data.linkedin} target="_blank" rel="noreferrer" style={{
-            padding: '0.75rem 2rem', border: '1px solid var(--border)', color: 'var(--text-muted)',
-            fontFamily: 'DM Mono, monospace', fontSize: '0.8rem', letterSpacing: '0.1em',
-            textDecoration: 'none', transition: 'all 0.2s ease',
-          }}
-            onMouseEnter={e => { e.target.style.borderColor = 'var(--accent)'; e.target.style.color = 'var(--accent)'; }}
-            onMouseLeave={e => { e.target.style.borderColor = 'var(--border)'; e.target.style.color = 'var(--text-muted)'; }}
+          <a href={data.linkedin} target="_blank" rel="noreferrer"
+            style={buttonStyle}
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
           >
             LinkedIn
           </a>
