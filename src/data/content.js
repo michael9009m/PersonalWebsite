@@ -98,6 +98,17 @@ export const data = {
       live: null,
       github: "https://github.com/michael9009m",
     },
+    {
+  name: "Titanic Survival Predictor",
+  tech: ["Python", "Scikit-learn", "Pandas", "Machine Learning"],
+  description: "Trained a binary classification model on Titanic passenger data, engineering features such as family size and title extraction and building a full preprocessing pipeline to handle missing values and categorical encoding.",
+  bullets: [
+    "Achieved 92% test accuracy validated through cross-validation, precision/recall analysis, and confusion matrix evaluation to ensure generalization beyond surface-level accuracy.",
+    "Presented findings and model methodology directly to the CEO of Bourns Inc., communicating technical results and business implications to a non-technical executive audience.",
+  ],
+  live: null,
+  github: "https://github.com/michael9009m",
+},
   ],
 
   skills: [
