@@ -32,7 +32,7 @@ export const data = {
     },
     {
       company: "IBM",
-      role: "Software Engineering Intern",
+      role: "Software Engineer Intern",
       location: "San Jose, CA",
       dates: "06/2022 – 08/2022",
       bullets: [
